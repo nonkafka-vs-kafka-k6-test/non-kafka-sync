@@ -4,18 +4,18 @@
 * 알람 발송은 실제로 하지 않고 Thread.sleep(1000) 처리
 
 ## 🚀실행 방법
-1. 터미널에서 아래 명령어로 코드 다운로드
+1. 터미널에서 코드 다운로드
    ```bash
    git clone https://github.com/nonkafka-vs-kafka-k6-test/non-kafka-sync.git
    ```
    
 2. application.yaml파일에 본인의 DB정보 입력
-3. powershell 혹은 cmd를 관리자 권한으로 열고 아래 명령어로 k6 설치
+3. powershell 혹은 cmd를 관리자 권한으로 열고 k6 설치
    ```bash
    choco install k6
    ```
 4. 애플리케이션 실행
-5. 터미널에서 프로젝트 경로로 이동 후 아래 명령어로 k6테스트 시작
+5. 터미널에서 프로젝트 경로로 이동 후 k6테스트 시작
    ```bash
    k6 run test.js
    ```
