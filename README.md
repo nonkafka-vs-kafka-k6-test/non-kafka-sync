@@ -9,7 +9,7 @@
    git clone https://github.com/nonkafka-vs-kafka-k6-test/non-kafka-sync.git
    ```
    
-2. application.yaml파일에 본인의 db정보 입력
+2. application.yaml파일에 본인의 DB정보 입력
 3. powershell 혹은 cmd를 관리자 권한으로 열고 아래 명령어로 k6 설치
    ```bash
    choco install k6
