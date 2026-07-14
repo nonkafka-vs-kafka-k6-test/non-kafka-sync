@@ -1,20 +1,23 @@
-# 프로젝트 소개
-DB 쓰기 작업 및 알람 발송을 카프카를 사용하지 않고, 동기적으로 처리.  
-k6로 50명이 1초마다 API 요청 과부하 테스트.  
-알람발송은 실제로 하지 않고 Thread.sleep(1000) 처리.
+# 📌프로젝트 소개
+* DB 쓰기 작업 및 알람 발송을 카프카를 사용하지 않고, 동기적으로 처리.  
+* k6를 사용하여 50명이 1초마다 API 요청하도록 과부하 테스트.  
+* 알람 발송은 실제로 하지 않고 Thread.sleep(1000) 처리.
 
----
-
-### 실행 방법
-1. https://github.com/nonkafka-vs-kafka-k6-test/non-kafka-sync.git 으로 깃 클론
+## 🚀실행 방법
+1. 터미널에서 아래 명령어로 코드 다운로드
+   ```bash
+   git clone https://github.com/nonkafka-vs-kafka-k6-test/non-kafka-sync.git
+   ```
+   
 2. application.yaml파일에 본인의 db정보 입력
-3. powershell 혹은 cmd를 관리자 권한으로 열고 choco install k6 를 실행하여 k6 설치
+3. powershell 혹은 cmd를 관리자 권한으로 열고 아래 명령어로 k6 설치
+   ```bash
+   choco install k6
+   ```
 4. 애플리케이션 실행
 5. 터미널에서 프로젝트 경로로 들어와 k6 run test.js 입력
 
----
-
-### k6 과부하 테스트 결과
+## 📊k6 과부하 테스트 결과
 ```text
          /\      Grafana   /‾‾/  
     /\  /  \     |\  __   /  /   
